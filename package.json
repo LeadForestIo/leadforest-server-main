@@ -1,0 +1,53 @@
+{
+  "name": "leadforest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "set NODE_ENV=development&nodemon server.js",
+    "devu": "export NODE_ENV=development&&nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tweetsydotio/leadforest-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tweetsydotio/leadforest-server/issues"
+  },
+  "homepage": "https://github.com/tweetsydotio/leadforest-server#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "deep-email-validator": "^0.1.21",
+    "deep-email-validator-extended": "^0.2.0",
+    "dotenv": "^16.0.1",
+    "email-validator": "^2.0.4",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "firebase-admin": "^11.2.1",
+    "http-errors": "^2.0.0",
+    "joi": "^17.9.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "lodash.chunk": "^4.2.0",
+    "mongodb": "^4.6.0",
+    "mongoose": "^6.3.4",
+    "node-cron": "^3.0.1",
+    "node-modules": "^0.0.1",
+    "nodemailer": "^6.8.0",
+    "oauth": "^0.9.15",
+    "oauth-1.0a": "^2.2.6",
+    "stripe": "^10.17.0",
+    "twitter": "^1.7.1",
+    "twitter-v2": "^1.1.0",
+    "unirest": "^0.6.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  }
+}
