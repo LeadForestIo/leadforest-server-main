@@ -106,7 +106,7 @@ db()
   });
 
 // console.log(process.env.NODE_ENV)
-// cors stuff
+// cors
 const axios = require('axios');
 
 const port = 3001;
