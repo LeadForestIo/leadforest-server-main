@@ -104,5 +104,4 @@ db()
   .catch((err) => {
     console.log(`SERVER ERROR: ${err}`);
   });
-
-// console.log(process.env.NODE_ENV)
+  
