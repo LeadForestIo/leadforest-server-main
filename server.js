@@ -106,29 +106,3 @@ db()
   });
 
 // console.log(process.env.NODE_ENV)
-// cors
-const axios = require('axios');
-
-const port = 3001;
-
-app.use(express.json());
-
-app.get('/twitter', async (req, res) => {
-  try {
-    const response = await axios.get(`https://api.twitter.com${req.url}`, {
-      headers: {
-        Authorization: req.headers.authorization, // Forward Twitter API authorization header
-      },
-    });
-
-    res.json(response.data);
-  } catch (error) {
-    console.error(error);
-    res.status(error.response.status).json(error.response.data);
-  }
-});
-
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
-// testing commit
